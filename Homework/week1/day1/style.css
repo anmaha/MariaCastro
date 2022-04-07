@@ -1,0 +1,35 @@
+.navContainer{
+    border: solid coral;
+    border-width: 2px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+    padding: 12px;
+}
+
+.navLink{
+
+}
+
+.TitleBox{
+    border: solid grey;
+    border-width: 2px;
+    padding: auto;
+    margin: 20px;
+    text-align: center;
+}
+
+.contentBox{
+    border: solid rgb(14, 145, 93);
+    border-width: 2px;
+    padding: auto;
+    text-align: center;
+    flex: 50%;
+}
+    
+
+p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 16px;
+}
