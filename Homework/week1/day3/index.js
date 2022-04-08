@@ -24,3 +24,12 @@ for ( let i in dishName) {
 }
 
 console.log(cart)
+
+// Function changeTitle
+const changeTitle = (topic) => {
+    let switch_it_up = document.querySelector('.header');
+    switch_it_up.innerHTML = topic;
+}
+// call the function we just made changeTitle
+// pass it a new string or topic
+//changeTitle("Space Shuttles are cool");
