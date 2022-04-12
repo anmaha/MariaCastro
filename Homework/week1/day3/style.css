@@ -1,10 +1,118 @@
+*
+{
+ margin: 0;   
+ padding: 0;
+}
+nav
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
+:root
+{
+    --primary-color: rgb(135, 135, 183);
+    --secondary-color: rgb(181, 186, 136);
+    --hover-color: green;
+    --focus-color: blue;
+
+}
 .header{
-    background-color: lightgray;
+    background-color: var(--primary-color);
+
     padding: 12px;
+}
+.header h1
+{
+    padding: 1rem;
+}
+.header h1, .header h3
+{
+    color:#011c27;
+}
+.navLinks
+{
+    flex: 1;
+    text-align: right;
+}
+.navLinks ul li
+{
+    list-style: none;
+    padding: 0.5rem;
+    margin: 1rem;
+}
+.navLinks ul li:hover
+{
+    transition: 250ms ease;
+    background-color: var(--hover-color);
+}
+.navLinks ul li:focus
+{
+    background-color: var(--focus-color);
+}
+
+.introduction
+{
+    text-align: center;
+    padding: 1rem;
+}
+.introduction h3, .introduction p 
+{
+    padding: 1em;
+}
+
+.menu-items .Item
+{
+    display: flex;
+}
+.menu-items .Item > *
+{
+    padding: 0.375rem;
+}
+.menu-items .Item *
+{
+    flex: 1;
+}
+.menu-items p
+{
+    color: #011c27;
+}
+
+.checkout
+{
+    margin: 0.125rem 0;
+}
+.checkout div
+{
+    display: flex;
+}
+.checkout div *
+{
+    flex: 1;
+    padding: 0 0.125rem;
+}
+/* .title{
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .dishes{
     background-color: lightgoldenrodyellow;
     padding: 12px;
 }
+
+.cartButton{
+    /* margin: 1em;
+    font-size: 1em;
+    padding: 12px; */
+    /* background-color: aliceblue; */
+    /* }
+    
+.cartButton:hover{
+        /* margin: 1em;
+        font-size: 1em;
+        padding: 12px; */
+        /* color: antiquewhite;
+        background-color: rgba(110, 20, 20, 0.961);
+        } */ 

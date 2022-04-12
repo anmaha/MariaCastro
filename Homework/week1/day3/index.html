@@ -8,24 +8,86 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- header -->
     <div class="header">
-    <h1>Restaurant</h1>
+        <h1 class="title">Restaurant</h1>
+        <hr>
+        <nav>
+            <div class="navLinks">
+                <ul>
+                    <li id="cart">Cart 0</li>
+                </ul>
+            </div>
+        </nav>
     </div>
-    
-    <div class="dishes">
-        <p>Chicken</p>
-        <button>Add to Cart</button>
-        <p>Beef</p>
-        <button>Add to Cart</button>
-        <p>Vegetables</p>
-        <button>Add to Cart</button>
-        <p>Salad</p>
-        <button>Add to Cart</button>
-        <p>Soup</p>
-        <button>Add to Cart</button>
-    </div>
+    <!-- body -->
+        <div class="introduction">
+            <h3>Welcome to the Restaurant</h3>
+            <p>Pick out a dish and add it to your cart</p>
+        </div>
+        <div class="menu-items">
+            <h3>Dishes</h3>
+            <br>
+            <div class="Item">
+                <p>Chicken</p>
+                <button onclick="addItemToCart('Dishes',0)">Add to Cart</button>
+                <button onclick="removeItemFromCart('Dishes',0)">Remove from Cart</button>
+            </div>
+            <div class="Item"> 
+                <p>Beef</p>
+                <button onclick="addItemToCart('Dishes',1)">Add to Cart</button>
+                <button onclick="removeItemFromCart('Dishes',1)">Remove from Cart</button>
+            </div>
+            <div class="Item">
+                <p>Vegetables</p>
+                <button onclick="addItemToCart('Dishes',2)">Add to Cart</button>
+                <button onclick="removeItemFromCart('Dishes',2)">Remove from Cart</button>
+            </div>
+            <div class="Item">
+                <p>Salad</p>
+                <button onclick="addItemToCart('Dishes',3)">Add to Cart</button>
+                <button onclick="removeItemFromCart('Dishes',3)">Remove from Cart</button>
+            </div>
+            <div class="Item">
+                <p>Soup</p>
+                <button onclick="addItemToCart('Dishes',4)">Add to Cart</button>
+                <button onclick="removeItemFromCart('Dishes',4)">Remove from Cart</button>
+           </div>
+        </div>
+        <div class="menu-items">
+            <h3>Drinks</h3>
+            <br>
+            <div class="Item">
+                <p>Mango Juice</p>
+                <button onclick="addItemToCart('Drinks',0)">Add to Cart</button>
+                <button onclick="removeItemFromCart('Drinks',0)">Remove from Cart</button>
+            </div>
+            <div class="Item"> 
+                <p>Tea</p>
+                <button onclick="addItemToCart('Drinks',1)">Add to Cart</button>
+                <button onclick="removeItemFromCart('Drinks',1)">Remove from Cart</button>
+            </div>
+            <div class="Item">
+                <p>Soda</p>
+                <button onclick="addItemToCart('Drinks',2)">Add to Cart</button>
+                <button onclick="removeItemFromCart('Drinks',2)">Remove from Cart</button>
+            </div>
+            <div class="Item">
+                <p>Coffee</p>
+                <button onclick="addItemToCart('Drinks',3)">Add to Cart</button>
+                <button onclick="removeItemFromCart('Drinks',3)">Remove from Cart</button>
+            </div>
+        </div>
 
-    <button onClick= " changeTitle('Title is changed' )"> Click to change title </button>
+        <div class="checkout" id="checkout-id">
+            <div class="checkout-item">
+                <h3>Total</h3>
+                <h3>$0.00</h3>
+            </div>
+        </div>
+
+<br><br>
+    <button onClick= "changeTitle('Welcome to the Racing Restaurant' )"> Click me</button>
     
     
     <script src="index.js"></script>

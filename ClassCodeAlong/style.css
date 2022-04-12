@@ -1,0 +1,36 @@
+body{
+    background-color: aliceblue;
+}
+
+.navContainer
+{
+    border: solid purple;
+    border-width: .2px;
+    height: 110px;
+    display: flex;
+    justify-content: space-around;
+    padding: 1em;
+}
+
+.navTag
+{
+    border: solid green;
+    background-color: azure;
+    width: 50%;
+    height: 15px;
+    padding: 8px;
+    border-width: .5px               ;
+}
+.navTag:hover
+{
+    border: solid green;
+    background-color: rgb(174, 241, 241);
+    width: 50%;
+    height: 15px;
+    padding: 8px;
+    border-width: .5px;
+}
+.nikeLogo
+{
+    height: 90px;
+}
