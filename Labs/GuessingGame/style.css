@@ -1,0 +1,37 @@
+*{
+
+}
+
+body{
+    background-color: black;
+    color: green;
+   text-align: center;
+   width: 60%;
+   margin: auto;
+}
+
+.answer{
+    margin: auto;
+    border: solid white 2px;
+    border-radius: 25px;
+    height: 200px;
+    margin: auto;
+}
+
+.score{
+    display: flex;
+ justify-content: flex-end;
+}
+
+.cards{
+    display: flex;
+    
+
+}
+
+.card{
+    margin: auto;
+    border: solid blue 1px;
+    width: 30%;
+  
+}

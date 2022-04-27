@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Krishsna Ramen</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="icon"
+      href="https://c8.alamy.com/comp/2F4ENC5/cartoon-red-bowl-of-ramen-noodles-in-a-wave-shape-illustration-2F4ENC5.jpg"
+      type="image/jpg"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body style="height: 400vh;">
+    <div class="header">
+      <img
+        src="https://c8.alamy.com/comp/2F4ENC5/cartoon-red-bowl-of-ramen-noodles-in-a-wave-shape-illustration-2F4ENC5.jpg"
+        alt=""
+        class="logo"
+        onclick="julian()"
+      />
+      <h1 class="mainTitle">Krishsna Ramen</h1>
+    </div>
+
+    <div class="peekaboo"></div>
+
+    <img
+      src="https://images.unsplash.com/photo-1618889482923-38250401a84e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+      alt=""
+      class="photoTop"
+    />
+
+    <nav>
+      <div onclick="createReservation()" class="navButton" href="/about.html">
+        Book Now
+      </div>
+      <div class="navButton" href="/menu.html">Menu</div>
+      <div class="navButton" href="/contact.html">Contact</div>
+
+      <input type="text" placeholder="Enter Menu Ingredient" class="searcher">
+    </nav>
+  
+
+    <!-- ----------------------------- -->
+    <h1 id="topSpace"class="textImportant">Chef's Choice</h1>  
+    <div class="superContainer">
+     
+    </div>
+    <h3 class="textImportant">Beef Teriyaki Egg Drop Soup</h3>
+
+    <img
+    src="https://images.unsplash.com/photo-1623341214825-9f4f963727da?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cmFtZW58ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60"
+    alt=""
+    class="cspecial"
+  />
+
+
+    <div class="btnContainer">
+         <div class="btnSm" id="btnOrder">Place Order</div>
+        <div class="btnSm btnChefs">Meet Our Chefs</div>
+        <div class="btnSm" >Find Location</div>
+    </div>
+    
+    <div class="screen"></div>
+
+    <div class="user-input-container">
+        <label name="user-input-label">Enter text for our new Element</label>
+        <input type="text" name="user-input" id="user-data" />
+        <button class="btn-input">Submit</button>
+      </div>
+
+    </div>
+    <div class="viewer">
+        <div class="shadow">
+            <!-- <div class="profileCard"> This div is created by the js </div>             -->
+          
+        </div>
+    </div>
+
+    <!-- placeOrder -->
+<ul class="ul-parent">
+    <li class="home">Home</li>
+    <li>Term</li>
+    <li>Service</li>
+    <li>Contact</li>
+</ul>
+
+
+    <script src="app.js"></script>
+  </body>
+</html>        

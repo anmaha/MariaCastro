@@ -1,0 +1,85 @@
+// 1. Write a JavaScript function that displays the larger of two integers
+const biggerOfTwo = () => {
+  let flag = true;
+  let num1, num2;
+  let answer = "";
+  const solution = document.querySelector(".solution");
+  while (flag) {
+    num1 = parseInt(prompt("Enter your first number"));
+    num2 = parseInt(prompt("Enter your second number"));
+    if (num2) flag = false;
+  }
+  if (num1 > num2) {
+    answer = `${num1} is greater than ${num2}`;
+  } else if (num1 < num2) {
+    answer = `${num2} is greater than ${num1}`;
+  } else {
+    answer = `${num1} is equal to ${num2}`;
+  }
+
+  let convertedGrade = 95
+let dayOfTheWeek = 'Monday'
+
+//Jade's example
+switch (dayOfTheWeek) {
+    case 'Monday': 
+    case 'Tuesday': 
+    case 'Wednesday':
+        console.log('Monday Tuesday or Wednesday')
+        break;
+    case 'Thursday':
+        console.log()
+        break;
+    default: 
+        console.log('F')
+        break;
+}
+
+// PascalCase
+// camelCase
+
+
+// if(convertedGrade >= 90){
+
+// }
+// else if(convertedGrade >=80){
+
+// }
+// else if(convertedGrade >= 70){
+
+// }
+// else {
+ 
+// }
+
+//Manara's solution html Ali  11:42 AM
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="screen">
+      <div class="gradebook">
+        Students Grade:
+        <span class="gradePoint"></span>
+      </div>
+    </div>
+    <div class="btnContainer">
+      <h1 class="solution"></h1>
+      <button class="doSomething" onclick="biggerOfTwo()">Answer One</button>
+      <button class="doSomething" onclick="evaluateStudentGrade()">
+        Answer Two
+      </button>
+      <button class="doSomething" onclick="determineTime()">
+        Answer Three
+      </button>
+    </div>
+    <script src="./script/app.js"></script>
+  </body>
+</html>

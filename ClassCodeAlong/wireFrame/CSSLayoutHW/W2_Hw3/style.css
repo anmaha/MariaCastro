@@ -1,0 +1,29 @@
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+
+body{
+    height: 100vh;
+    display:flex;
+    background-image: url(images/IMG_0073.jpeg);
+    background-size: cover;
+}
+
+.parent{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;    
+}
+.parent > div{ 
+    flex: 0 33.33333333%;
+    background-color: goldenrod;
+    border-radius: 50%;
+  }
+  .parent > div:hover {
+    background-color: palevioletred;
+    border-radius: 50%;
+    opacity: 0;
+  }

@@ -1,0 +1,11 @@
+let convertedGrade = 5;
+
+switch (convertedGrade){
+    case convertedGrade >=90:       console.log('A');
+        break;
+    case convertedGrade >=80: console.log('B');
+       break;
+}
+
+let dayOfTheWeek = 'Monday';
+
