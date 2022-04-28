@@ -1,0 +1,85 @@
+@keyframes shipRight {
+    0%{ right: 0vw;}  
+    50%{ right: 75vw;} 
+    100%{ right: 0vw;} 
+}
+@keyframes alienLeft {
+    0%{ left: 0vw;}  
+    50%{ left: 75vw;} 
+    100%{ left: 0vw;} 
+}
+
+body{
+    background-color: cornflowerblue;
+}
+
+.gameboard{
+    border: solid black;
+    /* height: 52vh; */
+    margin: 1em;
+    display: flex;
+    justify-content: space-between;  
+}
+.legend{
+    border: solid blue;
+    border-radius: 22px;
+    height: 22vh;
+    margin: 2em;
+    background-color: grey; 
+    display: flex;
+   
+}
+.us{
+    border: solid lime;
+    /* margin: 1em; */
+    /* width: 30px; */
+}
+.them{
+    border: solid salmon;
+    margin: 1em;
+    /* width: 210px; */
+}
+.score{
+    border: solid yellow;
+    border-radius: 22px;
+    margin: 1em;
+    padding:1em;
+    color: white;
+}
+.alienContainer{
+    justify-content: space-around;
+    border: solid white;
+    margin: 1em;
+    color: lime;
+    padding: 1em;
+}
+
+.ship{
+    height: 100px;
+    margin-top: 20vh;
+}
+.ship-attack{
+    animation: shipRight 2s ease;
+}
+.alien-attack{
+    animation: alienLeft 2s ease;
+}
+
+.alien{
+    height: 50px;
+}
+
+.healthbar{
+    border: solid yellow;
+    height: 12px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.fifty{
+    background-color: yellow;
+    width:50%
+}
+.hummit{
+    background-color: yellow;
+    width:50%
+}
