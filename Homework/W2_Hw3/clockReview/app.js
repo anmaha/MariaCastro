@@ -36,10 +36,10 @@ secondInput.addEventListener("keydown", function (e) {
     const secondId = setInterval(() => {
       // Add +1 to each previously displayed second
       seconds++;
-
+      
       // If my seconds get to 60 add +1 to my minutes
       if (Number(seconds) === 60) {
-        ++minutes;
+        minutes++;
 
         minuteInput.value = String(minutes).padStart(2, "0");
 
