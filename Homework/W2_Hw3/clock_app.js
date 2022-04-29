@@ -3,6 +3,12 @@ let temporizador;
 let startTime;
 let limite;
 
+let newDate = new Date();
+console.log(newDate.getTime());
+
+// var currentTime = new Date();
+// console.log(currentTime.getTime()-newDate.getTime());
+
   // listen for mouse clicks on the button
   document.getElementById("btnStart").addEventListener("click", botaoClicked);
   console.log("Documento carregado");
@@ -45,6 +51,7 @@ function updateTime() {
   // check if we are above the time limit and set the color of the timer accordingly
   if (minutos >= limite) {
     document.getElementById("clock").className = "red";
+    clearInterval(temporizador);
   } else {
     document.getElementById("clock").className = "blue";
   }

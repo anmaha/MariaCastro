@@ -1,4 +1,6 @@
-
+h1, h2{
+    text-align: center;
+}
 .clock1{
   width: 50%;
   text-align: center;
@@ -16,6 +18,9 @@
     justify-content:center;
     box-shadow: 1px 5px 5px grey;
     font-size: 30px;
+}
+.minutes, .seconds{
+    width: 30%;
 }
 
 .blue {
