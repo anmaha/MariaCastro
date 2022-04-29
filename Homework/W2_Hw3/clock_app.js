@@ -1,16 +1,12 @@
-// when the document is loaded, trigger the "documentLoaded" function
-window.addEventListener('DOMContentLoaded', documentLoaded, false);
 
-var startTime;
-var limite;
-var temporizador;
+let temporizador;
+let startTime;
+let limite;
 
-function documentLoaded() {
-  "use strict";
   // listen for mouse clicks on the button
-  document.getElementById("btnStart").addEventListener("click", botaoClicked, false);
+  document.getElementById("btnStart").addEventListener("click", botaoClicked);
   console.log("Documento carregado");
-}
+
 
 // when we click on the button, we save the current time, and the time limit. We then
 // create a timer to execute the "updateTime" function once a second.
