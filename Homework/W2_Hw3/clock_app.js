@@ -1,66 +1,66 @@
-// let temporizador;
-// let startTime;
-// let limite;
+let temporizador;
+let startTime;
+let limite;
 
-// let newDate = new Date();
-// console.log(newDate.getTime());
+let newDate = new Date();
+console.log(newDate.getTime());
 
-// // var currentTime = new Date();
-// // console.log(currentTime.getTime()-newDate.getTime());
+// var currentTime = new Date();
+// console.log(currentTime.getTime()-newDate.getTime());
 
-//   // listen for mouse clicks on the button
-//   document.getElementById("btnStart").addEventListener("click", botaoClicked);
-//   console.log("Documento carregado");
+  // listen for mouse clicks on the button
+  document.getElementById("btnStart").addEventListener("click", botaoClicked);
+  console.log("Documento carregado");
 
 
-// // when we click on the button, we save the current time, and the time limit. We then
-// // create a timer to execute the "updateTime" function once a second.
-// function botaoClicked() {
-//   "use strict";
+// when we click on the button, we save the current time, and the time limit. We then
+// create a timer to execute the "updateTime" function once a second.
+function botaoClicked() {
+  "use strict";
 
-//   startTime = new Date();
+  startTime = new Date();
 
-//   limite = parseInt(document.getElementById("txtTempo").value);
+  limite = parseInt(document.getElementById("txtTempo").value);
 
-//   clearInterval(temporizador);
-//   temporizador = setInterval(updateTime, 1000);
-// }
+  clearInterval(temporizador);
+  temporizador = setInterval(updateTime, 1000);
+}
 
-// function updateTime() {
-//   "use strict";
-//   // read the current time
-//   var currentTime = new Date();
-//   // calculate how many seconds passed since the start of the timer
-//   var elapsed = (currentTime.getTime() - startTime.getTime()) / 1000;
-//   // convert seconds to minutes and seconds (below 60)
-//   var minutos = Math.floor(elapsed / 60);
-//   var segundos = Math.floor(elapsed % 60);
+function updateTime() {
+  "use strict";
+  // read the current time
+  var currentTime = new Date();
+  // calculate how many seconds passed since the start of the timer
+  var elapsed = (currentTime.getTime() - startTime.getTime()) / 1000;
+  // convert seconds to minutes and seconds (below 60)
+  var minutos = Math.floor(elapsed / 60);
+  var segundos = Math.floor(elapsed % 60);
 
-//   // pad with zeroes on the left to look better
-//   if (minutos < 10) {
-//     minutos = "0" + minutos;
-//   }
-//   if (segundos < 10) {
-//     segundos = "0" + segundos;
-//   }
+  // pad with zeroes on the left to look better
+  if (minutos < 10) {
+    minutos = "0" + minutos;
+  }
+  if (segundos < 10) {
+    segundos = "0" + segundos;
+  }
 
-//   // show the elapsed time
-//   document.getElementById("clock").innerHTML = minutos + ":" + segundos;
+  // show the elapsed time
+  document.getElementById("clock").innerHTML = minutos + ":" + segundos;
 
-//   // check if we are above the time limit and set the color of the timer accordingly
-//   if (minutos >= limite) {
-//     document.getElementById("clock").className = "red";
-//     clearInterval(temporizador);
-//   } else {
-//     document.getElementById("clock").className = "blue";
-//   }
+  // check if we are above the time limit and set the color of the timer accordingly
+  if (minutos >= limite) {
+    document.getElementById("clock").className = "red";
+    clearInterval(temporizador);
+  } else {
+    document.getElementById("clock").className = "blue";
+  }
 
-// }
+}
 
 // for second clock edit in place
 const minuteInput = document.querySelector('.minutes');
 const secondInput = document.querySelector('.seconds');
-
+const otherClock = document.querySelector('.clock2')
 // add DOM manipulation
 // eventlistner to minutes and seconds input
 minuteInput.addEventListener('keydown', function(e) {
@@ -97,6 +97,8 @@ secondInput.addEventListener('keydown', function(e) {
         //stop timer
         clearInterval(startClock);
         //and change bkgd color of clock
+        otherClock.classList.add('red');
+
       }
       // show the seconds elaped to secondsInput.value
       secondInput.value = String(seconds).padStart(2,"0");

@@ -21,6 +21,8 @@ h1, h2{
 }
 .minutes, .seconds{
     width: 30%;
+    font-size: 30px;
+    background-color: #0781D4;
 }
 
 .blue {
