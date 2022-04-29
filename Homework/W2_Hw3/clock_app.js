@@ -65,7 +65,7 @@ const otherClock = document.querySelector('.clock2')
 // eventlistner to minutes and seconds input
 minuteInput.addEventListener('keydown', function(e) {
 //if enter is pressed, change focus to seconds input
-  if(e.keyCode === 13){
+  if(e.key === "Enter"){
    secondInput.focus();
   }
 });
@@ -75,7 +75,7 @@ secondInput.addEventListener('keydown', function(e) {
   let minutes = 0;
   let seconds = 0;
 // if keydown event is enter key after input second, retrieve inputs values then start the clock with a setInterval(function, 1000),
-  if(e.keyCode === 13){
+  if(e.key === "Enter"){
     // retrieve mintute and seconds entered by user 
     let minuteValue = minuteInput.value;
     let secondValue = secondInput.value;
