@@ -24,7 +24,6 @@ secondInput.addEventListener("keydown", function (e) {
   if (e.keyCode === 13) {
     // Retrieve whatever the user entered inside the boxes
     let minuteValue = minuteInput.value;
-
     // Retrieve the second values
     let secondValue = secondInput.value;
 
@@ -33,7 +32,7 @@ secondInput.addEventListener("keydown", function (e) {
     secondInput.value = String(seconds).padStart(2, "0");
 
     // Create an interval and retrieve and retrieve the interval id
-    const secondId = setInterval(() => {
+    const secondId = setInterval( () => {
       // Add +1 to each previously displayed second
       seconds++;
       
@@ -42,12 +41,11 @@ secondInput.addEventListener("keydown", function (e) {
         minutes++;
 
         minuteInput.value = String(minutes).padStart(2, "0");
-
         // Reset the second
         seconds = 0;
       }
 
-      // Verify that the predefined minute, second  combo equal to the timer
+      //  that the predefined minute, equal to the timer
       if (minutes === Number(minuteValue) && seconds === Number(secondValue)) {
         // Stop the timer
         clearInterval(secondId);
