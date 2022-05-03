@@ -1,12 +1,12 @@
 @keyframes shipRight {
+    from{ left: 0vw;}  
+    50%{ left: 75vw;} 
+    to{ left: 0vw;} 
+}
+@keyframes alienLeft {
     0%{ right: 0vw;}  
     50%{ right: 75vw;} 
     100%{ right: 0vw;} 
-}
-@keyframes alienLeft {
-    0%{ left: 0vw;}  
-    50%{ left: 75vw;} 
-    100%{ left: 0vw;} 
 }
 
 body{
@@ -55,6 +55,7 @@ body{
 }
 
 .ship{
+    position: relative;
     height: 100px;
     margin-top: 20vh;
 }
@@ -66,6 +67,7 @@ body{
 }
 
 .alien{
+    position: relative;
     height: 50px;
 }
 

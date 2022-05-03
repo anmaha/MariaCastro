@@ -1,6 +1,6 @@
 // get the elements
 let ship = document.querySelector('.ship');
-const alien =document.querySelector('.alien');
+let alien =document.querySelectorAll('.alien');
 
 // attack functions
 const shipAttack = () =>{
@@ -10,14 +10,19 @@ const shipAttack = () =>{
 }
 
 const alienAttack = () =>{
-    alien.classList.toggle('alien-attack');
+    alien[0].classList.toggle('alien-attack');
+    console.log(alien)
+}
+
+if (Math.random() < alien[0].accuracy) {
+	console.log('You have been hit!');
 }
 
 class Ship {
-    constructor(){
+    constructor(hp,firepower,myMax,myMin){
         this.hp = hp;
         this.firepower = firepower;
-        this.accuracy = this.accuracy;
+        this.accuracy = Math.random() * (myMax - myMin) + myMin;
     }
 
 }
