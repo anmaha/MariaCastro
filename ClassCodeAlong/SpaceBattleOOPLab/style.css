@@ -1,6 +1,6 @@
 @keyframes shipRight {
     from{ left: 0vw;}  
-    50%{ left: 75vw;} 
+    50%{ left: 55vw;} 
     to{ left: 0vw;} 
 }
 @keyframes alienLeft {

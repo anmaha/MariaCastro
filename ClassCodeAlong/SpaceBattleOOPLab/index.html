@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
+        <h1>Space Battle</h1>
         <div class="gameboard">
             <div class="us">
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKzrgj-wU2nEFd07ggcMChg0pY8HJl_cM6T8WqBdNU7w&s" alt="" class="ship">
@@ -48,19 +49,21 @@
             </div>
         </div>     
 </div>
-<button onclick="shipAttack()"> USS ship attack</button>
-<button onclick="alienAttack()"> Alien ship attack</button>     
-        <h1>Legend</h1>
+<!-- <button onclick="shipAttack()"> USS ship attack</button>
+<button onclick="alienAttack()"> Alien ship attack</button>      -->
+        <button class="beginBattle">Battle Alien Ships</button>
+
+<h1>Legend</h1>
             <div class="legend">
         
             <p class="score">
-                USS Assembly: <span>0</span>
+            <span id="ussScore">0</span>
             </p>
             
             <hr>
 
             <p class="score">
-                Alien Team: <span>0</span>
+            <span id="alienScore">0</span>
             </p>
             
 
