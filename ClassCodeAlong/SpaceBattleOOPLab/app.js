@@ -60,9 +60,11 @@ beginBattleButton.addEventListener('click', function(){
     //ussAssembly attacks first alien ship alien[]
     shipAttack();
     if (Math.random() < aliens[0].accuracy) {
-        console.log('USS Assembly ');
+        console.log('USS Assembly Missed');
     }   else{
         console.log('Alien Ship Hit!')
+        alien[0].hull -= ussAssembly.firepower;
+        alienStats.innerHTML = `Alien Ship Life is ${alien[0].hull}`;
     }
 
 
