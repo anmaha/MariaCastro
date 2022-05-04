@@ -54,7 +54,7 @@ const alienStats = document.querySelector('#alienScore');
 //Begin Space Battle
 beginBattleButton.addEventListener('click', function(){
     // Display the ussAssembly stats and alien[0] stats
-    console.log('Battle Begins');
+    console.log('USS Assembly Attack');
     alienStats.innerHTML = `Alien Ship Life is ${alien[0].hull}`;
     USstats.innerHTML = `USS Assembly Life is ${ussAssembly.hull}`;
     //ussAssembly attacks first alien ship alien[]
@@ -62,12 +62,17 @@ beginBattleButton.addEventListener('click', function(){
     if (Math.random() < aliens[0].accuracy) {
         console.log('USS Assembly Missed');
         alienAttack();
-    }   else{
+    }else{
         console.log('Alien Ship Hit!')
         alien[0].hull -= ussAssembly.firepower;
-        alienStats.innerHTML = `Alien Ship Life is ${alien[0].hull}`;
-    }
-
+        if(alien[0].hull <= 0){
+            alien[0].alien.src =  "https://bestanimations.com/media/explosions/933419296explosion-animation-1.gif";
+        }
+        else if(alien[0].hull > 0){
+            alienStats.innerHTML = `Alien Ship Life is ${alien[0].hull}`;
+            alienAttack();
+        }   
+    }   
 
 })
 
