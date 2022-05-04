@@ -62,11 +62,15 @@ beginBattleButton.addEventListener('click', function(){
     if (Math.random() < aliens[0].accuracy) {
         console.log('USS Assembly Missed');
         alienAttack();
-    }else{
+    }
+    else{
         console.log('Alien Ship Hit!')
         alien[0].hull -= ussAssembly.firepower;
         if(alien[0].hull <= 0){
-            alien[0].alien.src =  "https://bestanimations.com/media/explosions/933419296explosion-animation-1.gif";
+          alien[0].alien.src =  "https://bestanimations.com/media/explosions/933419296explosion-animation-1.gif";
+          USstats.innerHTML += `<br>Alien Ship Destryed`;
+         // alien[0].alien.style.visibility = 'hidden';
+         alienStats.innerHTML = `Alien Ship Life Destroyed`;
         }
         else if(alien[0].hull > 0){
             alienStats.innerHTML = `Alien Ship Life is ${alien[0].hull}`;
