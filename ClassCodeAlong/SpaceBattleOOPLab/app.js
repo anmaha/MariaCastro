@@ -61,6 +61,7 @@ beginBattleButton.addEventListener('click', function(){
     shipAttack();
     if (Math.random() < aliens[0].accuracy) {
         console.log('USS Assembly Missed');
+        alienAttack();
     }   else{
         console.log('Alien Ship Hit!')
         alien[0].hull -= ussAssembly.firepower;
