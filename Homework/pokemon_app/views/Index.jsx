@@ -1,8 +1,8 @@
 const React = require('react');
 // css Style
 const myStyle = {
-    color: '#ffffff',
-    backgroundColor: '#000000'
+    //color: '#ffffff',
+    //backgroundColor: '#000000'
 };
 const myStyle2 = {
     //text-transform: 'capitalize'
@@ -19,7 +19,7 @@ class Index extends React.Component {
             {pokemon.map((pokemon, id) => {
                 return(
                     <li>
-                        <a style={myStyle2} href ={`/pokemon/${id}`}>{pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1)}</a>
+                        <a style={myStyle} href ={`/pokemon/${id}`}>{pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1)}</a>
                         <img src ={`${pokemon.img}.jpg`} alt=''></img>
                     </li>
                 )
