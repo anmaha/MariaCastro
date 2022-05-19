@@ -8,12 +8,12 @@ class Show extends React.Component {
         return( 
         <>
          <h1> Gotta Catch 'Em All </h1>
-             <h2>{/* <h2>{pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1)}<br> <img src ={`${pokemon.img}.jpg`} alt=''></img></br>      */}
+              <h2>{pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1)} <img src ={`${pokemon.img}.jpg`} alt=''></img>    
              </h2>
              <nav>
                  <a href='/pokemon'>Show 'Em All Page</a>
              </nav>
-            </>
+      </>
          );
     }
 }

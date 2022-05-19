@@ -16,10 +16,10 @@ class Index extends React.Component {
             <div><div>            
             <h1>See all the Pokemon!</h1>
             <ul style={myStyle}>
-            {pokemon.map((pokemon) => {
+            {pokemon.map((pokemon, id) => {
                 return(
                     <li>
-                        <a style={myStyle2} href ={`/pokemon/${pokemon.name}`}>{pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1)}</a>
+                        <a style={myStyle2} href ={`/pokemon/${id}`}>{pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1)}</a>
                         <img src ={`${pokemon.img}.jpg`} alt=''></img>
                     </li>
                 )
